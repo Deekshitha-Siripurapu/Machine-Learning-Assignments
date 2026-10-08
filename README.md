@@ -94,3 +94,82 @@ Pandas
 Matplotlib
 
 Scikit-learn
+
+# Logistic Regression - Course Completion Prediction
+
+## Overview
+
+This project implements Logistic Regression to predict whether a student will complete an online course based on their learning activity and quiz performance.
+
+The model predicts two possible outcomes:
+
+- `1` → Student completed the course
+- `0` → Student did not complete the course
+
+## Dataset
+
+The dataset used in this project is `course_completion.csv`.
+
+### Features
+
+The model uses the following features:
+
+- `hours_per_week` - Number of hours spent learning per week
+- `logins_count` - Number of times the student logged into the course
+- `quiz_avg_score` - Average quiz score of the student
+
+### Target Variable
+
+- `completed`
+
+Where:
+
+- `1` = Completed
+- `0` = Not Completed
+
+## Machine Learning Approach
+
+The project demonstrates Logistic Regression both from scratch and using Scikit-learn.
+
+### Logistic Regression from Scratch
+
+The implementation includes:
+
+1. Loading the dataset
+2. Selecting features and target
+3. Train-test splitting
+4. Feature scaling
+5. Sigmoid function
+6. Probability calculation
+7. Log Loss / Cross-Entropy Loss
+8. Gradient Descent
+9. Weight and bias updates
+10. Making predictions
+11. Evaluating the model
+
+### Workflow
+
+```text
+Dataset
+   ↓
+Feature Selection
+   ↓
+Train-Test Split
+   ↓
+Feature Scaling
+   ↓
+Linear Score
+   ↓
+Sigmoid Function
+   ↓
+Probability
+   ↓
+Log Loss
+   ↓
+Gradient Descent
+   ↓
+Update Weights and Bias
+   ↓
+Prediction
+   ↓
+Model Evaluation
